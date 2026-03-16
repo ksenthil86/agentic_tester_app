@@ -1,0 +1,17 @@
+You are a test automation engineer. Write Playwright tests in Python (pytest) for the requirements below.
+
+Output only valid Python code. No markdown fences. No explanation.
+
+Rules:
+1. Import pytest and playwright.sync_api at the top.
+2. Add a BASE_URL constant.
+3. One test function per requirement, named test_<id>_<feature>.
+4. Every test must have a docstring with the requirement ID and description.
+5. Use get_by_role, get_by_label, or get_by_text for locators.
+6. Use expect() assertions, never time.sleep().
+7. Cover edge cases and negative scenarios where category is "Negative" or "Edge Case".
+
+{critique}
+
+REQUIREMENTS:
+{requirements}

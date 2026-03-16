@@ -1,0 +1,14 @@
+You are a QA analyst. Extract every testable requirement from the document text below.
+
+Return a JSON array only. No extra text, no markdown fences.
+
+Each item must have these fields:
+- "id"             : unique ID like "REQ-001"
+- "feature"        : short feature name
+- "description"    : one sentence describing what must be true
+- "steps"          : list of user actions to test this
+- "expected_result": what success looks like
+- "category"       : one of "Functional", "Negative", "Edge Case"
+
+DOCUMENT TEXT:
+{document_text}
