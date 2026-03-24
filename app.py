@@ -108,36 +108,26 @@ if st.button("🚀 Run all agents", type="primary"):
         log_area.code("\n".join(logs[-20:]), language=None)
 
     try:
-        # ── Agent A ───────────────────────────────────────────────────────────
-        log("=" * 50)
-        log("▶  AGENT A — Extract requirements")
-        log("=" * 50)
+        from agents.pipeline import build_pipeline
 
-        import agents.agent_a as agent_a
-        requirements = agent_a.run(api_key=api_key, document_text=doc_text, log=log)
-        log("")
-
-        # ── Agent B (v1) ──────────────────────────────────────────────────────
-        log("=" * 50)
-        log("▶  AGENT B — Generate Playwright tests (v1)")
-        log("=" * 50)
-
-        import agents.agent_b as agent_b
-        test_code = agent_b.run(api_key=api_key, requirements=requirements, version=1, log=log)
-        log("")
-
-        # ── Agent C (review loop) ─────────────────────────────────────────────
-        log("=" * 50)
-        log("▶  AGENT C — Review loop (max 5 attempts)")
-        log("=" * 50)
-
-        import agents.agent_c as agent_c
-        final_code, report, attempts = agent_c.run(
-            api_key=api_key,
-            requirements=requirements,
-            initial_test_code=test_code,
-            log=log,
+        pipeline = build_pipeline()
+        result = pipeline.invoke(
+            {
+                "api_key": api_key,
+                "document_text": doc_text,
+                "requirements": [],
+                "test_code": "",
+                "report": {},
+                "version": 0,
+                "attempt": 0,
+            },
+            config={"configurable": {"log": log}},
         )
+
+        final_code  = result["test_code"]
+        report      = result["report"]
+        attempts    = result["attempt"]
+        requirements = result["requirements"]
 
         log("")
         log("=" * 50)
