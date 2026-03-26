@@ -1,5 +1,5 @@
 """
-agents/agent_a.py
+agents/agent_a.py - ANALYST AGENT
 Extracts structured requirements from PDF text using a LangChain chain:
     prompt | llm | JsonOutputParser
 """

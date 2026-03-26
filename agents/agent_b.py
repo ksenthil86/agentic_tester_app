@@ -1,5 +1,5 @@
 """
-agents/agent_b.py
+agents/agent_b.py - TEST GENERATION AGENT
 Generates Playwright (pytest) test code from requirements using a LangChain chain:
     prompt | llm | StrOutputParser
 
