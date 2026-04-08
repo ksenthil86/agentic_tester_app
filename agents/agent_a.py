@@ -22,7 +22,7 @@ def _build_chain(api_key: str):
     return prompt | llm | parser
 
 
-def run(api_key: str, document_text: str, log=None) -> list:
+def run(api_key: str, document_text: str, log=None) -> dict:
     """
     Extract requirements from document text.
 
@@ -32,15 +32,24 @@ def run(api_key: str, document_text: str, log=None) -> list:
         log:           Optional callable(str) for status messages.
 
     Returns:
-        List of requirement dicts.
+        Dict with keys: "requirements" (list of dicts), "page_urls" (list of str).
     """
     if log:
         log("🤖 Agent A: Extracting requirements via Gemini...")
 
     chain = _build_chain(api_key)
-    requirements = chain.invoke({"document_text": document_text})
+    result = chain.invoke({"document_text": document_text})
+
+    # Handle both old format (plain list) and new format (dict)
+    if isinstance(result, list):
+        requirements = result
+        page_urls = []
+    else:
+        requirements = result.get("requirements", result if isinstance(result, list) else [])
+        page_urls = result.get("page_urls", [])
 
     if log:
-        log(f"✅ Agent A: Extracted {len(requirements)} requirements.")
+        log(f"✅ Agent A: Extracted {len(requirements)} requirements, "
+            f"{len(page_urls)} page URLs.")
 
-    return requirements
+    return {"requirements": requirements, "page_urls": page_urls}

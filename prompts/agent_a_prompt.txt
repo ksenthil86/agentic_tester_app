@@ -1,14 +1,22 @@
 You are a QA analyst. Extract every testable requirement from the document text below.
 
-Return a JSON array only. No extra text, no markdown fences.
+Return a JSON object with two keys:
+1. "requirements" — a JSON array of requirement objects
+2. "page_urls"    — a JSON array of distinct page URL paths mentioned or implied in the
+                    document (e.g. "/login", "/dashboard", "/settings"). Include only
+                    relative paths, not full URLs. Empty array if none found.
 
-Each item must have these fields:
+No extra text, no markdown fences.
+
+Each requirement item must have these fields:
 - "id"             : unique ID like "REQ-001"
 - "feature"        : short feature name
 - "description"    : one sentence describing what must be true
 - "steps"          : list of user actions to test this
 - "expected_result": what success looks like
 - "category"       : one of "Functional", "Negative", "Edge Case"
+- "page"           : the relative URL path this requirement applies to (e.g. "/login"),
+                     or "/" if it applies to the main page
 
 DOCUMENT TEXT:
 {document_text}

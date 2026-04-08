@@ -43,8 +43,28 @@ st.success("API key entered ✓")
 st.divider()
 
 
-# ── Step 2: Upload PDF ────────────────────────────────────────────────────────
-st.subheader("Step 2 — Upload requirements PDF")
+# ── Step 2: Base URL ──────────────────────────────────────────────────────────
+st.subheader("Step 2 — Application base URL")
+base_url = st.text_input(
+    "Enter the base URL of the application under test",
+    placeholder="https://example.com",
+    help="Agent B will fetch real locators from this page. Agent C will validate the generated tests against the live DOM.",
+)
+
+if not base_url:
+    st.info("Enter the base URL to continue. This is used to fetch real page locators.")
+    st.stop()
+
+if not base_url.startswith(("http://", "https://")):
+    st.error("Base URL must start with http:// or https://")
+    st.stop()
+
+st.success(f"Base URL set: **{base_url}** ✓")
+st.divider()
+
+
+# ── Step 3: Upload PDF ────────────────────────────────────────────────────────
+st.subheader("Step 3 — Upload requirements PDF")
 uploaded = st.file_uploader("Choose a PDF file", type=["pdf"])
 
 if not uploaded:
@@ -73,20 +93,22 @@ st.success(f"PDF loaded: **{uploaded.name}** — {len(doc_text):,} characters ex
 st.divider()
 
 
-# ── Step 3: Run agents ────────────────────────────────────────────────────────
-st.subheader("Step 3 — Run agents")
+# ── Step 4: Run agents ────────────────────────────────────────────────────────
+st.subheader("Step 4 — Run agents")
 
 
 def _report_to_md(report: dict, attempts: int) -> str:
-    verdict = report.get("verdict", "?")
+    verdict  = report.get("verdict", "?")
+    loc_score = report.get("locator_accuracy_score", "N/A")
     lines = [
         f"# Review Report",
-        f"**Verdict:** {verdict}  |  **Score:** {report.get('score', 0)}/100  |  **Attempts:** {attempts}",
+        f"**Verdict:** {verdict}  |  **Score:** {report.get('score', 0)}/100  |  **Locator Accuracy:** {loc_score}/100  |  **Attempts:** {attempts}",
         f"\n**Summary:** {report.get('summary', '')}",
     ]
     for key, title in [
         ("hallucinations", "Hallucinations"),
         ("missing_tests",  "Missing Tests"),
+        ("dummy_locators", "Dummy/Invented Locators"),
         ("issues",         "Code Issues"),
     ]:
         items = report.get(key, [])
@@ -114,10 +136,14 @@ if st.button("🚀 Run all agents", type="primary"):
         result = pipeline.invoke(
             {
                 "api_key": api_key,
+                "base_url": base_url,
                 "document_text": doc_text,
                 "requirements": [],
+                "page_urls": [],
+                "dom_snapshot": "",
                 "test_code": "",
                 "report": {},
+                "locked_locators": [],
                 "version": 0,
                 "attempt": 0,
             },
@@ -147,6 +173,7 @@ if st.button("🚀 Run all agents", type="primary"):
             "final_code": final_code,
             "report": report,
             "attempts": attempts,
+            "dom_snapshot": result.get("dom_snapshot", ""),
         })
 
     except Exception as e:
@@ -165,13 +192,15 @@ if st.session_state.get("done"):
     attempts = st.session_state["attempts"]
     verdict  = report.get("verdict", "?")
     score    = report.get("score", 0)
+    loc_score = report.get("locator_accuracy_score", "N/A")
 
     # Metrics row
-    c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Verdict",    verdict)
-    c2.metric("Score",      f"{score}/100")
-    c3.metric("Attempts",   f"{attempts}/5")
-    c4.metric("Requirements", len(reqs))
+    c1, c2, c3, c4, c5 = st.columns(5)
+    c1.metric("Verdict",          verdict)
+    c2.metric("Score",            f"{score}/100")
+    c3.metric("Locator Accuracy", f"{loc_score}/100")
+    c4.metric("Attempts",         f"{attempts}/5")
+    c5.metric("Requirements",     len(reqs))
 
     # Tabs
     tab_code, tab_reqs, tab_review = st.tabs(
@@ -196,10 +225,19 @@ if st.session_state.get("done"):
     with tab_review:
         st.write(f"**Summary:** {report.get('summary')}")
 
+        loc_score_val = report.get("locator_accuracy_score", "N/A")
+        if isinstance(loc_score_val, int):
+            color = "green" if loc_score_val >= 80 else ("orange" if loc_score_val >= 50 else "red")
+            st.markdown(
+                f"**Locator Accuracy Score:** :{color}[**{loc_score_val}/100**] "
+                f"— percentage of locators verified against the live DOM"
+            )
+
         for key, title, ok_msg in [
-            ("hallucinations", "🔴 Hallucinations",  "No hallucinations."),
-            ("missing_tests",  "🟠 Missing tests",   "All requirements covered."),
-            ("issues",         "🔵 Code issues",     "No issues found."),
+            ("hallucinations",  "🔴 Hallucinations",             "No hallucinations."),
+            ("missing_tests",   "🟠 Missing tests",              "All requirements covered."),
+            ("dummy_locators",  "🟣 Dummy/Invented locators",    "All locators verified against live DOM."),
+            ("issues",          "🔵 Code issues",                "No issues found."),
         ]:
             items = report.get(key, [])
             with st.expander(f"{title} ({len(items)})", expanded=bool(items)):

@@ -1,0 +1,1475 @@
+[
+  {
+    "id": "REQ-001",
+    "feature": "Home Page Examples List",
+    "description": "The home page shall display a 'Welcome to the-internet' heading, an 'Available Examples' subheading, and a vertical list of hyperlinks where each link's text matches its example name.",
+    "steps": [
+      "Navigate to the root URL (/).",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays 'Welcome to the-internet' heading, 'Available Examples' subheading, and a vertical list of hyperlinks where each link's text matches its example name (e.g., 'Checkboxes', 'File Upload', 'Typos').",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-002",
+    "feature": "Footer Attribution",
+    "description": "Most example pages shall display a consistent footer section containing the text 'Powered by Elemental Selenium'.",
+    "steps": [
+      "Navigate to an example page (e.g., /checkboxes, /upload, /dropdown).",
+      "Scroll to the bottom of the page."
+    ],
+    "expected_result": "The page displays a footer containing the text 'Powered by Elemental Selenium'.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-003",
+    "feature": "Checkboxes",
+    "description": "The checkboxes page shall display at least two checkbox input controls, labeled 'checkbox 1' and 'checkbox 2' or equivalent nearby text.",
+    "steps": [
+      "Navigate to /checkboxes.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays at least two checkbox input controls, labeled 'checkbox 1' and 'checkbox 2' or with equivalent nearby text.",
+    "category": "Functional",
+    "page": "/checkboxes"
+  },
+  {
+    "id": "REQ-004",
+    "feature": "Checkboxes",
+    "description": "The user shall be able to toggle checkbox states by clicking them, and the target checkbox shall toggle its checked/unchecked state according to browser default behavior.",
+    "steps": [
+      "Navigate to /checkboxes.",
+      "Click a checkbox.",
+      "Observe the checkbox state."
+    ],
+    "expected_result": "The target checkbox toggles its checked/unchecked state according to browser default behavior.",
+    "category": "Functional",
+    "page": "/checkboxes"
+  },
+  {
+    "id": "REQ-005",
+    "feature": "Form Authentication",
+    "description": "The login page shall display a 'Login Page' heading, an input field labeled 'Username', an input field labeled 'Password', and a 'Login' button.",
+    "steps": [
+      "Navigate to /login.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays a 'Login Page' heading, an input field labeled 'Username', an input field labeled 'Password', and a 'Login' button.",
+    "category": "Functional",
+    "page": "/login"
+  },
+  {
+    "id": "REQ-006",
+    "feature": "Form Authentication",
+    "description": "The system shall authenticate the user as successful and navigate to a 'secure area' page (e.g., /secure) that indicates successful login when valid credentials ('tomsmith' / 'SuperSecretPassword!') are provided.",
+    "steps": [
+      "Navigate to /login.",
+      "Enter 'tomsmith' in the Username field.",
+      "Enter 'SuperSecretPassword!' in the Password field.",
+      "Click the 'Login' button."
+    ],
+    "expected_result": "The system navigates to a 'secure area' page (e.g., /secure) that indicates successful login, and no error message is displayed.",
+    "category": "Functional",
+    "page": "/login"
+  },
+  {
+    "id": "REQ-007",
+    "feature": "Form Authentication",
+    "description": "The system shall display an error message indicating wrong information and not navigate to the secure area page when invalid credentials are provided.",
+    "steps": [
+      "Navigate to /login.",
+      "Enter any username and/or password combination other than 'tomsmith' / 'SuperSecretPassword!'.",
+      "Click the 'Login' button."
+    ],
+    "expected_result": "The system displays an error message indicating that the information is wrong, does not navigate to the secure area page, and the error message is visually associated with the login form.",
+    "category": "Negative",
+    "page": "/login"
+  },
+  {
+    "id": "REQ-008",
+    "feature": "Dropdown List",
+    "description": "The dropdown page shall display a descriptive heading 'Dropdown List' and a dropdown (select element) with a default prompt 'Please select an option' and at least 'Option 1' and 'Option 2' as selectable options.",
+    "steps": [
+      "Navigate to /dropdown.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays a heading 'Dropdown List', a dropdown with a default prompt 'Please select an option', and includes 'Option 1' and 'Option 2' as selectable options.",
+    "category": "Functional",
+    "page": "/dropdown"
+  },
+  {
+    "id": "REQ-009",
+    "feature": "Dropdown List",
+    "description": "The user shall be able to change the dropdown selection, and the dropdown's visible selection shall update to show the chosen option.",
+    "steps": [
+      "Navigate to /dropdown.",
+      "Click the dropdown.",
+      "Select an option (e.g., 'Option 1').",
+      "Observe the dropdown's visible selection."
+    ],
+    "expected_result": "The dropdown's visible selection updates to show the chosen option.",
+    "category": "Functional",
+    "page": "/dropdown"
+  },
+  {
+    "id": "REQ-010",
+    "feature": "Dynamic Controls",
+    "description": "The page shall display descriptive text explaining asynchronous element changes and at least one control (checkbox or input field) that may be dynamically enabled, disabled, added, or removed after user actions.",
+    "steps": [
+      "Navigate to /dynamic_controls.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays descriptive text about asynchronous element changes and at least one control (e.g., checkbox, input field) subject to dynamic changes.",
+    "category": "Functional",
+    "page": "/dynamic_controls"
+  },
+  {
+    "id": "REQ-011",
+    "feature": "Dynamic Loading",
+    "description": "The page shall display a heading 'Dynamically Loaded Page Elements' and provide two example links or sections: 'Example 1: Element on page that is hidden' and 'Example 2: Element rendered after the fact'.",
+    "steps": [
+      "Navigate to /dynamic_loading.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays heading 'Dynamically Loaded Page Elements' and two example links/sections: 'Example 1: Element on page that is hidden' and 'Example 2: Element rendered after the fact'.",
+    "category": "Functional",
+    "page": "/dynamic_loading"
+  },
+  {
+    "id": "REQ-012",
+    "feature": "File Upload",
+    "description": "The page shall display a heading 'File Uploader', a file input control, an 'Upload' button, and may present a drag-and-drop area for file selection.",
+    "steps": [
+      "Navigate to /upload.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays heading 'File Uploader', a file input control, an 'Upload' button, and optionally a drag-and-drop area.",
+    "category": "Functional",
+    "page": "/upload"
+  },
+  {
+    "id": "REQ-013",
+    "feature": "File Upload",
+    "description": "The system shall accept a selected file and update the page to reflect that the file has been uploaded when the 'Upload' button is clicked.",
+    "steps": [
+      "Navigate to /upload.",
+      "Select a file using the file input or drag-and-drop.",
+      "Click the 'Upload' button."
+    ],
+    "expected_result": "The system accepts the selected file and the page updates to reflect that the file has been uploaded (e.g., confirmation text).",
+    "category": "Functional",
+    "page": "/upload"
+  },
+  {
+    "id": "REQ-014",
+    "feature": "JavaScript Alerts",
+    "description": "The page shall display a heading 'JavaScript Alerts', three clickable controls labeled 'Click for JS Alert', 'Click for JS Confirm', and 'Click for JS Prompt', and a 'Result:' label.",
+    "steps": [
+      "Navigate to /javascript_alerts.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays heading 'JavaScript Alerts', three buttons: 'Click for JS Alert', 'Click for JS Confirm', 'Click for JS Prompt', and a 'Result:' label.",
+    "category": "Functional",
+    "page": "/javascript_alerts"
+  },
+  {
+    "id": "REQ-015",
+    "feature": "JavaScript Alerts",
+    "description": "Clicking the 'Click for JS Alert' button shall trigger a browser-native JavaScript alert dialog.",
+    "steps": [
+      "Navigate to /javascript_alerts.",
+      "Click the 'Click for JS Alert' button."
+    ],
+    "expected_result": "A JavaScript alert dialog is displayed by the browser.",
+    "category": "Functional",
+    "page": "/javascript_alerts"
+  },
+  {
+    "id": "REQ-016",
+    "feature": "JavaScript Alerts",
+    "description": "Clicking 'Click for JS Confirm' shall display a JavaScript confirm dialog, and clicking 'Click for JS Prompt' shall display a JavaScript prompt dialog, with the 'Result:' area potentially updating.",
+    "steps": [
+      "Navigate to /javascript_alerts.",
+      "Click 'Click for JS Confirm'.",
+      "Click 'Click for JS Prompt'."
+    ],
+    "expected_result": "Clicking 'Click for JS Confirm' displays a JavaScript confirm dialog, and clicking 'Click for JS Prompt' displays a JavaScript prompt dialog, with the 'Result:' area potentially updating to reflect user actions.",
+    "category": "Functional",
+    "page": "/javascript_alerts"
+  },
+  {
+    "id": "REQ-017",
+    "feature": "Drag and Drop",
+    "description": "The page shall include a region that visually suggests drag-and-drop functionality.",
+    "steps": [
+      "Navigate to /drag_and_drop.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays a region visually suggesting drag-and-drop functionality.",
+    "category": "Functional",
+    "page": "/drag_and_drop"
+  },
+  {
+    "id": "REQ-018",
+    "feature": "Sortable Data Tables",
+    "description": "The page shall display a heading 'Data Tables', describe 'Example 1' and 'Example 2', and each example shall render a table with specific column headers and rows.",
+    "steps": [
+      "Navigate to /tables.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays heading 'Data Tables', describes 'Example 1' and 'Example 2', and each example renders a table with 'Last Name', 'First Name', 'Due', 'Web Site', 'Action' column headers and at least the specified rows.",
+    "category": "Functional",
+    "page": "/tables"
+  },
+  {
+    "id": "REQ-019",
+    "feature": "Sortable Data Tables",
+    "description": "Each row in the data tables shall include an 'edit' and a 'delete' action in the 'Action' column.",
+    "steps": [
+      "Navigate to /tables.",
+      "View any table row in Example 1 or Example 2."
+    ],
+    "expected_result": "Each row includes an 'edit' and a 'delete' action in the 'Action' column.",
+    "category": "Functional",
+    "page": "/tables"
+  },
+  {
+    "id": "REQ-020",
+    "feature": "Notification Messages",
+    "description": "The page shall display a heading 'Notification Message' and a notification message above the heading, describing an outcome such as 'Action successful' or 'Action unsuccessful, please try again'.",
+    "steps": [
+      "Navigate to /notification_message_rendered.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays heading 'Notification Message' and a notification message above the heading (e.g., 'Action successful').",
+    "category": "Functional",
+    "page": "/notification_message_rendered"
+  },
+  {
+    "id": "REQ-021",
+    "feature": "Notification Messages",
+    "description": "Clicking the link labeled 'Click here to load a new message.' shall display a new notification message, potentially with different text.",
+    "steps": [
+      "Navigate to /notification_message_rendered.",
+      "Click the link labeled 'Click here to load a new message.'.",
+      "Observe the notification message."
+    ],
+    "expected_result": "A new notification message is displayed, and its text may be different from the previous one.",
+    "category": "Functional",
+    "page": "/notification_message_rendered"
+  },
+  {
+    "id": "REQ-022",
+    "feature": "Entry Ad",
+    "description": "An advertisement modal shall automatically display on page load when the user navigates to /entry_ad for the first time or when the ad is enabled, and it shall be clearly distinguishable from the background content.",
+    "steps": [
+      "Navigate to /entry_ad (ensure ad is enabled or clear cookies).",
+      "Observe the page content."
+    ],
+    "expected_result": "An advertisement (modal or overlay) is displayed on the page and is clearly distinguishable from the background content.",
+    "category": "Functional",
+    "page": "/entry_ad"
+  },
+  {
+    "id": "REQ-023",
+    "feature": "Entry Ad",
+    "description": "The ad shall be dismissed from view when 'Close' is clicked and shall not reappear on subsequent page loads as long as the setting remains active.",
+    "steps": [
+      "Navigate to /entry_ad.",
+      "Click the 'Close' control associated with the ad.",
+      "Reload or revisit /entry_ad."
+    ],
+    "expected_result": "The ad is dismissed from view after 'Close' is clicked and does not appear on subsequent page loads.",
+    "category": "Functional",
+    "page": "/entry_ad"
+  },
+  {
+    "id": "REQ-024",
+    "feature": "Entry Ad",
+    "description": "Clicking the link or control labeled 'click here' associated with 'To re-enable it, click here.' shall cause the ad to display again on subsequent visits to /entry_ad.",
+    "steps": [
+      "Navigate to /entry_ad.",
+      "Close the ad (if visible).",
+      "Click the link labeled 'click here' to re-enable the ad.",
+      "Reload or revisit /entry_ad."
+    ],
+    "expected_result": "After re-enabling, the ad is displayed on page load during subsequent visits to /entry_ad.",
+    "category": "Functional",
+    "page": "/entry_ad"
+  },
+  {
+    "id": "REQ-025",
+    "feature": "Typos",
+    "description": "The page shall display descriptive text explaining that a typo may appear randomly, and on some page loads, at least one word or punctuation shall be incorrect, while on other loads, the text may render without such a typo.",
+    "steps": [
+      "Navigate to /typos.",
+      "Refresh the page multiple times.",
+      "Observe the displayed text."
+    ],
+    "expected_result": "The page displays descriptive text about random typos, and on some loads, a typo (e.g., 'won,t') is present, while on others, it is absent.",
+    "category": "Functional",
+    "page": "/typos"
+  },
+  {
+    "id": "REQ-026",
+    "feature": "Add/Remove Elements",
+    "description": "The page shall display a heading 'Add/Remove Elements' and a button labeled 'Add Element'.",
+    "steps": [
+      "Navigate to /add_remove_elements/.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays heading 'Add/Remove Elements' and a button labeled 'Add Element'.",
+    "category": "Functional",
+    "page": "/add_remove_elements/"
+  },
+  {
+    "id": "REQ-027",
+    "feature": "Add/Remove Elements",
+    "description": "Clicking the 'Add Element' button shall add a new button or UI element to the page, and the system shall allow multiple additions.",
+    "steps": [
+      "Navigate to /add_remove_elements/.",
+      "Click 'Add Element'.",
+      "Observe the page content."
+    ],
+    "expected_result": "A new button or UI element (e.g., 'Delete' button) is added to the page, and the system allows multiple additions.",
+    "category": "Functional",
+    "page": "/add_remove_elements/"
+  },
+  {
+    "id": "REQ-028",
+    "feature": "Add/Remove Elements",
+    "description": "Clicking the control associated with a dynamically added element shall remove it from the DOM and make it no longer visible.",
+    "steps": [
+      "Navigate to /add_remove_elements/.",
+      "Click 'Add Element' to add an element.",
+      "Click the newly added element (e.g., 'Delete' button).",
+      "Observe the page content."
+    ],
+    "expected_result": "The clicked element is removed from the DOM and is no longer visible.",
+    "category": "Functional",
+    "page": "/add_remove_elements/"
+  },
+  {
+    "id": "REQ-029",
+    "feature": "Disappearing Elements",
+    "description": "The page shall display descriptive text explaining elements may disappear/reappear on each load, and on some loads, certain menu items or elements shall be visible, while on others, at least one of them shall not be present.",
+    "steps": [
+      "Navigate to /disappearing_elements.",
+      "Load the page multiple times (including refresh).",
+      "Observe the presence of menu items or elements."
+    ],
+    "expected_result": "The page displays descriptive text about elements disappearing/reappearing, and specific menu items/elements are sometimes present and sometimes absent across loads.",
+    "category": "Functional",
+    "page": "/disappearing_elements"
+  },
+  {
+    "id": "REQ-030",
+    "feature": "Hovers",
+    "description": "The page shall display a heading 'Hovers' and at least three user images, each associated with hidden details (name: userX, 'View profile' link).",
+    "steps": [
+      "Navigate to /hovers.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays a heading 'Hovers' and at least three user images, each associated with hidden details (e.g., 'name: user1', 'View profile' link).",
+    "category": "Functional",
+    "page": "/hovers"
+  },
+  {
+    "id": "REQ-031",
+    "feature": "Hovers",
+    "description": "Hovering over an image shall reveal the corresponding user's name and 'View profile' link, and these details may be hidden again when the mouse leaves the image area.",
+    "steps": [
+      "Navigate to /hovers.",
+      "Move the mouse pointer over an image.",
+      "Observe the revealed details.",
+      "Move the mouse pointer away from the image.",
+      "Observe if details become hidden."
+    ],
+    "expected_result": "While hovering, the user's name and 'View profile' link become visible, and when the mouse leaves, the details may become hidden again.",
+    "category": "Functional",
+    "page": "/hovers"
+  },
+  {
+    "id": "REQ-032",
+    "feature": "A/B Test",
+    "description": "The page shall describe A/B testing or split testing as a way to test different versions of pages to determine which works best.",
+    "steps": [
+      "Navigate to /abtest.",
+      "Read the descriptive text."
+    ],
+    "expected_result": "The page displays text describing A/B testing or split testing.",
+    "category": "Functional",
+    "page": "/abtest"
+  },
+  {
+    "id": "REQ-033",
+    "feature": "A/B Test",
+    "description": "The page content may vary to reflect different versions, and the heading 'No A/B Test' may be present in the inspected variant.",
+    "steps": [
+      "Navigate to /abtest.",
+      "Optionally refresh the page multiple times.",
+      "Observe the page content and heading."
+    ],
+    "expected_result": "The page content may vary across loads, and the heading 'No A/B Test' is present in some variants.",
+    "category": "Functional",
+    "page": "/abtest"
+  },
+  {
+    "id": "REQ-034",
+    "feature": "Dynamic Content",
+    "description": "The page shall load new text and images on each page refresh, demonstrating changing content.",
+    "steps": [
+      "Navigate to /dynamic_content.",
+      "Observe initial text and images.",
+      "Refresh the page.",
+      "Observe text and images again."
+    ],
+    "expected_result": "New text and images are loaded on each page refresh.",
+    "category": "Functional",
+    "page": "/dynamic_content"
+  },
+  {
+    "id": "REQ-035",
+    "feature": "Dynamic Content",
+    "description": "When `?with_content=static` is appended to the URL or the 'click here' link is used, some of the content shall become static.",
+    "steps": [
+      "Navigate to /dynamic_content?with_content=static (or click 'click here' on /dynamic_content).",
+      "Observe content.",
+      "Refresh the page.",
+      "Observe content again."
+    ],
+    "expected_result": "Some content on the page remains static across refreshes.",
+    "category": "Functional",
+    "page": "/dynamic_content"
+  },
+  {
+    "id": "REQ-036",
+    "feature": "Status Codes",
+    "description": "The page shall explain HTTP status codes and list standard codes (Success, Redirection, Client Error, Server Error) with a link to a complete list.",
+    "steps": [
+      "Navigate to /status_codes.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page explains HTTP status codes, lists standard codes (Success, Redirection, Client Error, Server Error), and provides a link to a complete list.",
+    "category": "Functional",
+    "page": "/status_codes"
+  },
+  {
+    "id": "REQ-037",
+    "feature": "Inputs",
+    "description": "The page shall render a numeric input field labeled 'Number'.",
+    "steps": [
+      "Navigate to /inputs.",
+      "Observe the page content."
+    ],
+    "expected_result": "A numeric input field labeled 'Number' is displayed.",
+    "category": "Functional",
+    "page": "/inputs"
+  },
+  {
+    "id": "REQ-038",
+    "feature": "Inputs",
+    "description": "The numeric input field shall accept numeric entry according to browser default behavior (e.g., up/down arrows).",
+    "steps": [
+      "Navigate to /inputs.",
+      "Interact with the numeric input field using keyboard arrows or by typing numbers."
+    ],
+    "expected_result": "The field accepts numeric entry, and up/down arrows change the numeric value.",
+    "category": "Functional",
+    "page": "/inputs"
+  },
+  {
+    "id": "REQ-039",
+    "feature": "Horizontal Slider",
+    "description": "The page shall show a horizontal slider control and an associated value indicator to its right.",
+    "steps": [
+      "Navigate to /horizontal_slider.",
+      "Observe the page content."
+    ],
+    "expected_result": "A horizontal slider control and an associated value indicator to its right are displayed.",
+    "category": "Functional",
+    "page": "/horizontal_slider"
+  },
+  {
+    "id": "REQ-040",
+    "feature": "Horizontal Slider",
+    "description": "When the slider is focused and moved (keyboard arrows or mouse drag), the value displayed to the right shall update accordingly.",
+    "steps": [
+      "Navigate to /horizontal_slider.",
+      "Focus the slider.",
+      "Move the slider using keyboard arrows or mouse drag.",
+      "Observe the displayed value."
+    ],
+    "expected_result": "The value displayed to the right of the slider updates to reflect the slider's position.",
+    "category": "Functional",
+    "page": "/horizontal_slider"
+  },
+  {
+    "id": "REQ-041",
+    "feature": "Context Menu",
+    "description": "The page shall display a box area where right-click triggers a custom context menu item called 'the-internet'.",
+    "steps": [
+      "Navigate to /context_menu.",
+      "Right-click within the specified box area."
+    ],
+    "expected_result": "A custom context menu appears, including an item called 'the-internet'.",
+    "category": "Functional",
+    "page": "/context_menu"
+  },
+  {
+    "id": "REQ-042",
+    "feature": "Context Menu",
+    "description": "Selecting the custom context menu item 'the-internet' shall trigger a JavaScript alert.",
+    "steps": [
+      "Navigate to /context_menu.",
+      "Right-click within the specified box area.",
+      "Select the 'the-internet' custom context menu item."
+    ],
+    "expected_result": "A JavaScript alert is triggered.",
+    "category": "Functional",
+    "page": "/context_menu"
+  },
+  {
+    "id": "REQ-043",
+    "feature": "Challenging DOM",
+    "description": "The page shall display a table with headers 'Lorem, Ipsum, Dolor, Sit, Amet, Diceret, Action' and multiple rows with numbered values (Iuvaret0, Iuvaret1, etc.) and 'edit delete' actions.",
+    "steps": [
+      "Navigate to /challenging_dom.",
+      "Observe the page content."
+    ],
+    "expected_result": "A table is displayed with headers 'Lorem, Ipsum, Dolor, Sit, Amet, Diceret, Action', multiple rows with numbered values (e.g., Iuvaret0, Iuvaret1), and 'edit delete' actions.",
+    "category": "Functional",
+    "page": "/challenging_dom"
+  },
+  {
+    "id": "REQ-044",
+    "feature": "Challenging DOM",
+    "description": "The page shall describe that locators are intentionally difficult (unique IDs, no helpful locators, canvas element).",
+    "steps": [
+      "Navigate to /challenging_dom.",
+      "Read the descriptive text."
+    ],
+    "expected_result": "The page displays text describing that locators are intentionally difficult.",
+    "category": "Functional",
+    "page": "/challenging_dom"
+  },
+  {
+    "id": "REQ-045",
+    "feature": "Exit Intent",
+    "description": "A modal window encouraging user action (e.g., sign up) shall display when the mouse moves out of the viewport pane.",
+    "steps": [
+      "Navigate to /exit_intent.",
+      "Move the mouse cursor out of the browser viewport (e.g., towards the top of the browser window)."
+    ],
+    "expected_result": "A modal window encouraging user action (e.g., sign up) is displayed.",
+    "category": "Functional",
+    "page": "/exit_intent"
+  },
+  {
+    "id": "REQ-046",
+    "feature": "Exit Intent",
+    "description": "The exit intent modal shall include a 'Close' control that dismisses it.",
+    "steps": [
+      "Navigate to /exit_intent.",
+      "Trigger the exit intent modal.",
+      "Click the 'Close' control within the modal."
+    ],
+    "expected_result": "The modal window is dismissed.",
+    "category": "Functional",
+    "page": "/exit_intent"
+  },
+  {
+    "id": "REQ-047",
+    "feature": "JQuery UI Menu",
+    "description": "The page shall display a JQuery UI menu demonstrating nested menu items controlled by hover/mouse actions.",
+    "steps": [
+      "Navigate to /jqueryui/menu.",
+      "Observe the menu and interact with it using hover/mouse."
+    ],
+    "expected_result": "A JQuery UI menu demonstrating nested menu items controlled by hover/mouse actions is displayed.",
+    "category": "Functional",
+    "page": "/jqueryui/menu"
+  },
+  {
+    "id": "REQ-048",
+    "feature": "JQuery UI Menu",
+    "description": "The descriptive text shall explain that visibility of elements is controlled by JQuery and may not be obvious from HTML alone.",
+    "steps": [
+      "Navigate to /jqueryui/menu.",
+      "Read the descriptive text."
+    ],
+    "expected_result": "The page displays descriptive text explaining JQuery controls element visibility.",
+    "category": "Functional",
+    "page": "/jqueryui/menu"
+  },
+  {
+    "id": "REQ-049",
+    "feature": "JavaScript Error",
+    "description": "The page shall contain a JavaScript error triggered on the onload event.",
+    "steps": [
+      "Navigate to /javascript_error.",
+      "Open browser developer tools console.",
+      "Observe the console for errors."
+    ],
+    "expected_result": "A JavaScript error is reported in the browser console on page load.",
+    "category": "Functional",
+    "page": "/javascript_error"
+  },
+  {
+    "id": "REQ-050",
+    "feature": "JavaScript Error",
+    "description": "The page shall describe that this can be a problem for normal JavaScript injection techniques.",
+    "steps": [
+      "Navigate to /javascript_error.",
+      "Read the descriptive text."
+    ],
+    "expected_result": "The page displays text describing that the JS error can be problematic for injection techniques.",
+    "category": "Functional",
+    "page": "/javascript_error"
+  },
+  {
+    "id": "REQ-051",
+    "feature": "Large & Deep DOM",
+    "description": "The page shall present a deeply nested DOM structure with headings 'No Siblings' and 'Siblings' and a large tabular layout with hundreds of cells marked by level and index (e.g., 1.1, 1.2, \u2026 50.50).",
+    "steps": [
+      "Navigate to /large.",
+      "Observe the page content."
+    ],
+    "expected_result": "A deeply nested DOM structure with headings 'No Siblings' and 'Siblings' and a large tabular layout with hundreds of cells (e.g., 1.1, 50.50) is displayed.",
+    "category": "Functional",
+    "page": "/large"
+  },
+  {
+    "id": "REQ-052",
+    "feature": "Large & Deep DOM",
+    "description": "The page shall describe that this layout is used to demonstrate rendering and test performance issues when DOMs are large.",
+    "steps": [
+      "Navigate to /large.",
+      "Read the descriptive text."
+    ],
+    "expected_result": "The page displays text describing the layout's purpose for demonstrating rendering and performance issues.",
+    "category": "Functional",
+    "page": "/large"
+  },
+  {
+    "id": "REQ-053",
+    "feature": "Infinite Scroll",
+    "description": "The page shall implement infinite scrolling such that scrolling down loads additional content blocks.",
+    "steps": [
+      "Navigate to /infinite_scroll.",
+      "Scroll down the page.",
+      "Observe content loading."
+    ],
+    "expected_result": "Additional content blocks are loaded as the user scrolls down.",
+    "category": "Functional",
+    "page": "/infinite_scroll"
+  },
+  {
+    "id": "REQ-054",
+    "feature": "Infinite Scroll",
+    "description": "The page shall contain a link or text 'next page'.",
+    "steps": [
+      "Navigate to /infinite_scroll.",
+      "Observe the page content."
+    ],
+    "expected_result": "A link or text 'next page' is present on the page.",
+    "category": "Functional",
+    "page": "/infinite_scroll"
+  },
+  {
+    "id": "REQ-055",
+    "feature": "File Download",
+    "description": "The page shall present a list of files as links under the heading 'File Downloader'.",
+    "steps": [
+      "Navigate to /download.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays heading 'File Downloader' and a list of files presented as clickable links.",
+    "category": "Functional",
+    "page": "/download"
+  },
+  {
+    "id": "REQ-056",
+    "feature": "File Download",
+    "description": "Clicking on any file name link shall initiate a download of the corresponding file via the browser.",
+    "steps": [
+      "Navigate to /download.",
+      "Click on any file name link.",
+      "Observe browser download behavior."
+    ],
+    "expected_result": "The browser initiates a download of the corresponding file.",
+    "category": "Functional",
+    "page": "/download"
+  },
+  {
+    "id": "REQ-057",
+    "feature": "Forgot Password",
+    "description": "The page shall display a form with an 'E-mail' field and a 'Retrieve password' button under heading 'Forgot Password'.",
+    "steps": [
+      "Navigate to /forgot_password.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays heading 'Forgot Password', a form with an 'E-mail' field, and a 'Retrieve password' button.",
+    "category": "Functional",
+    "page": "/forgot_password"
+  },
+  {
+    "id": "REQ-058",
+    "feature": "Forgot Password",
+    "description": "Submitting the form shall attempt to retrieve a password for the given email.",
+    "steps": [
+      "Navigate to /forgot_password.",
+      "Enter an email address in the 'E-mail' field.",
+      "Click the 'Retrieve password' button."
+    ],
+    "expected_result": "The system attempts to retrieve a password for the provided email.",
+    "category": "Functional",
+    "page": "/forgot_password"
+  },
+  {
+    "id": "REQ-059",
+    "feature": "Geolocation",
+    "description": "The page shall display heading 'Geolocation' and a button labeled 'Where am I?'.",
+    "steps": [
+      "Navigate to /geolocation.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays heading 'Geolocation' and a button labeled 'Where am I?'.",
+    "category": "Functional",
+    "page": "/geolocation"
+  },
+  {
+    "id": "REQ-060",
+    "feature": "Geolocation",
+    "description": "Clicking 'Where am I?' shall attempt to access the user\u2019s current latitude and longitude and display them on the page.",
+    "steps": [
+      "Navigate to /geolocation.",
+      "Click the 'Where am I?' button.",
+      "(If prompted by browser) Grant location permission.",
+      "Observe the page for displayed coordinates."
+    ],
+    "expected_result": "The system attempts to access the user's current latitude and longitude, and they are displayed on the page.",
+    "category": "Functional",
+    "page": "/geolocation"
+  },
+  {
+    "id": "REQ-061",
+    "feature": "Floating Menu",
+    "description": "The page shall show a floating menu that remains visible while the user scrolls through long text content.",
+    "steps": [
+      "Navigate to /floating_menu.",
+      "Scroll down the page.",
+      "Observe the menu's position."
+    ],
+    "expected_result": "A menu remains visible (floats) while the user scrolls through long text content.",
+    "category": "Functional",
+    "page": "/floating_menu"
+  },
+  {
+    "id": "REQ-062",
+    "feature": "Floating Menu",
+    "description": "The main content shall consist of multiple long paragraphs of placeholder Latin text.",
+    "steps": [
+      "Navigate to /floating_menu.",
+      "Observe the main content."
+    ],
+    "expected_result": "The main content consists of multiple long paragraphs of placeholder Latin text.",
+    "category": "Functional",
+    "page": "/floating_menu"
+  },
+  {
+    "id": "REQ-063",
+    "feature": "Shadow DOM",
+    "description": "The page shall demonstrate shadow DOM usage, including the text 'My default text' and repeated lines like 'Let\u2019s have some different text! In a list!'.",
+    "steps": [
+      "Navigate to /shadowdom.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays text 'My default text' and repeated lines like 'Let\u2019s have some different text! In a list!', demonstrating shadow DOM usage.",
+    "category": "Functional",
+    "page": "/shadowdom"
+  },
+  {
+    "id": "REQ-064",
+    "feature": "Shadow DOM",
+    "description": "Some content shall be enclosed in shadow DOM such that direct DOM queries may not see it in the regular document tree.",
+    "steps": [
+      "Navigate to /shadowdom.",
+      "Attempt to query for specific content (e.g., 'My default text') using standard DOM queries in browser developer tools."
+    ],
+    "expected_result": "Some content is enclosed in shadow DOM, and direct DOM queries may not find this content in the regular document tree.",
+    "category": "Functional",
+    "page": "/shadowdom"
+  },
+  {
+    "id": "REQ-065",
+    "feature": "Frames",
+    "description": "The /frames page shall display a list of frame-related examples, including 'Nested Frames' and 'iFrame'.",
+    "steps": [
+      "Navigate to /frames.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page displays a list of frame-related examples, including 'Nested Frames' and 'iFrame'.",
+    "category": "Functional",
+    "page": "/frames"
+  },
+  {
+    "id": "REQ-066",
+    "feature": "Frames",
+    "description": "Selecting 'Nested Frames' shall navigate to /nested_frames where multiple frames (top/bottom, left/right) are embedded.",
+    "steps": [
+      "Navigate to /frames.",
+      "Click the 'Nested Frames' link."
+    ],
+    "expected_result": "The system navigates to /nested_frames, where multiple frames (top/bottom, left/right) are embedded.",
+    "category": "Functional",
+    "page": "/frames"
+  },
+  {
+    "id": "REQ-067",
+    "feature": "Frames",
+    "description": "Selecting 'iFrame' shall navigate to a page with an editable rich text area.",
+    "steps": [
+      "Navigate to /frames.",
+      "Click the 'iFrame' link."
+    ],
+    "expected_result": "The system navigates to a page with an editable rich text area.",
+    "category": "Functional",
+    "page": "/frames"
+  },
+  {
+    "id": "REQ-068",
+    "feature": "Windows",
+    "description": "The /windows page shall display text 'Opening a new window' and a link 'Click Here', and clicking the link shall open a new browser window or tab.",
+    "steps": [
+      "Navigate to /windows.",
+      "Click the 'Click Here' link."
+    ],
+    "expected_result": "The page displays text 'Opening a new window' and a 'Click Here' link, and a new browser window or tab opens.",
+    "category": "Functional",
+    "page": "/windows"
+  },
+  {
+    "id": "REQ-069",
+    "feature": "Windows",
+    "description": "The /multiple_windows page shall provide a similar multi-window demonstration.",
+    "steps": [
+      "Navigate to /multiple_windows.",
+      "Click any link intended to open a new window/tab."
+    ],
+    "expected_result": "The page demonstrates multi-window behavior, and a new browser window or tab opens.",
+    "category": "Functional",
+    "page": "/multiple_windows"
+  },
+  {
+    "id": "REQ-070",
+    "feature": "Shifting Content",
+    "description": "The page shall list three examples: 'Menu Element', 'An image', 'List', describing that elements shift a few pixels on each page load.",
+    "steps": [
+      "Navigate to /shifting_content.",
+      "Observe the page content."
+    ],
+    "expected_result": "The page lists 'Menu Element', 'An image', 'List' examples and describes that elements shift a few pixels on each page load.",
+    "category": "Functional",
+    "page": "/shifting_content"
+  },
+  {
+    "id": "REQ-071",
+    "feature": "Shifting Content",
+    "description": "On reload, elements\u2019 positions shall change slightly, reflecting subtle rendering shifts.",
+    "steps": [
+      "Navigate to /shifting_content.",
+      "Observe the position of elements.",
+      "Reload the page.",
+      "Observe the position of elements again."
+    ],
+    "expected_result": "Elements' positions change slightly after reload.",
+    "category": "Functional",
+    "page": "/shifting_content"
+  },
+  {
+    "id": "REQ-072",
+    "feature": "Other Examples",
+    "description": "For examples listed on the home page but not fully inspected (e.g., 'Slow Resources', 'Secure File Download'), the page shall render their headings and descriptive text, and demonstrate the stated concept.",
+    "steps": [
+      "Navigate to /slow_resources.",
+      "Navigate to /secure_file_download.",
+      "Observe the page content."
+    ],
+    "expected_result": "Each page renders its heading and descriptive text, and demonstrates its stated concept (e.g., slow-loading resources, secure file downloads).",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-073",
+    "feature": "Typos",
+    "description": "Due to randomness, a typo is not guaranteed on every page load, and tests should accommodate this non-deterministic behavior.",
+    "steps": [
+      "Navigate to /typos.",
+      "Refresh the page multiple times.",
+      "Observe the text for typos."
+    ],
+    "expected_result": "A typo may or may not appear on any given page load.",
+    "category": "Edge Case",
+    "page": "/typos"
+  },
+  {
+    "id": "REQ-074",
+    "feature": "Typos",
+    "description": "Automation relying on exact text matches for the typo content may intermittently fail due to the intentional randomness.",
+    "steps": [
+      "Navigate to /typos.",
+      "Attempt to assert an exact text match for the potentially typo-affected content.",
+      "Refresh and repeat."
+    ],
+    "expected_result": "The assertion for exact text match intermittently fails when a typo is present.",
+    "category": "Negative",
+    "page": "/typos"
+  },
+  {
+    "id": "REQ-075",
+    "feature": "Dynamic Content",
+    "description": "Text and images on the dynamic content page may change on every refresh, so tests must not assert exact content unless `?with_content=static` is present in the URL.",
+    "steps": [
+      "Navigate to /dynamic_content.",
+      "Refresh the page multiple times.",
+      "Observe text and images."
+    ],
+    "expected_result": "Text and images change on each refresh.",
+    "category": "Edge Case",
+    "page": "/dynamic_content"
+  },
+  {
+    "id": "REQ-076",
+    "feature": "Notification Messages",
+    "description": "Different notification messages can appear after each 'Click here to load a new message', meaning a test asserting any one specific string may fail intermittently.",
+    "steps": [
+      "Navigate to /notification_message_rendered.",
+      "Click 'Click here to load a new message' multiple times.",
+      "Observe the notification message."
+    ],
+    "expected_result": "Different notification messages appear.",
+    "category": "Edge Case",
+    "page": "/notification_message_rendered"
+  },
+  {
+    "id": "REQ-077",
+    "feature": "Disappearing Elements",
+    "description": "Certain menu items may be absent on a given page load, requiring tests relying on their presence to use repeated refresh or conditional logic.",
+    "steps": [
+      "Navigate to /disappearing_elements.",
+      "Refresh the page multiple times.",
+      "Observe the presence or absence of specific menu items."
+    ],
+    "expected_result": "Specific menu items are sometimes present and sometimes absent.",
+    "category": "Edge Case",
+    "page": "/disappearing_elements"
+  },
+  {
+    "id": "REQ-078",
+    "feature": "Form Authentication",
+    "description": "Providing a wrong username, wrong password, or both shall result in an error message and refusal of access to the secure area.",
+    "steps": [
+      "Navigate to /login.",
+      "Enter 'wronguser' and 'SuperSecretPassword!'. Click Login.",
+      "Enter 'tomsmith' and 'wrongpassword'. Click Login.",
+      "Enter 'wronguser' and 'wrongpassword'. Click Login."
+    ],
+    "expected_result": "An error message is displayed for each invalid attempt, and access to the secure area is refused.",
+    "category": "Negative",
+    "page": "/login"
+  },
+  {
+    "id": "REQ-079",
+    "feature": "Form Authentication",
+    "description": "Submitting empty username or password fields shall be treated as incorrect information and produce an error message.",
+    "steps": [
+      "Navigate to /login.",
+      "Leave Username field empty, enter 'SuperSecretPassword!'. Click Login.",
+      "Enter 'tomsmith', leave Password field empty. Click Login.",
+      "Leave both fields empty. Click Login."
+    ],
+    "expected_result": "An error message is displayed for each attempt with empty fields, and access to the secure area is refused.",
+    "category": "Edge Case",
+    "page": "/login"
+  },
+  {
+    "id": "REQ-080",
+    "feature": "Forgot Password",
+    "description": "When the email field is left blank or an invalid email format is entered, the application may accept and process without specific UI error messages, relying on browser default behavior or backend handling.",
+    "steps": [
+      "Navigate to /forgot_password.",
+      "Leave the 'E-mail' field blank. Click 'Retrieve password'.",
+      "Enter 'invalid-email' in the 'E-mail' field. Click 'Retrieve password'."
+    ],
+    "expected_result": "No explicit UI error message is displayed for blank or invalid email format, and the form submission is processed (or browser default validation occurs).",
+    "category": "Edge Case",
+    "page": "/forgot_password"
+  },
+  {
+    "id": "REQ-081",
+    "feature": "Inputs",
+    "description": "Entering non-numeric characters into the numeric input field shall result in browser default behavior (e.g., ignoring characters) without breaking the page.",
+    "steps": [
+      "Navigate to /inputs.",
+      "Type non-numeric characters (e.g., 'abc') into the numeric input field."
+    ],
+    "expected_result": "The browser handles non-numeric input according to its default behavior (e.g., characters are not entered), and the page does not break or display JavaScript errors.",
+    "category": "Edge Case",
+    "page": "/inputs"
+  },
+  {
+    "id": "REQ-082",
+    "feature": "File Upload",
+    "description": "Attempting to submit the file upload form without choosing a file may result in browser-level prohibition or default error, but the application itself does not specify custom error messages.",
+    "steps": [
+      "Navigate to /upload.",
+      "Click the 'Upload' button without selecting a file."
+    ],
+    "expected_result": "The browser may prevent submission or display a default error message (e.g., 'Please select a file'), and no custom application-specific error message is displayed.",
+    "category": "Negative",
+    "page": "/upload"
+  },
+  {
+    "id": "REQ-083",
+    "feature": "File Upload",
+    "description": "Uploading large files or unsupported formats should not crash the page, though specific behavior is not constrained and may vary.",
+    "steps": [
+      "Navigate to /upload.",
+      "Attempt to upload a very large file (e.g., >1GB).",
+      "Attempt to upload a file with an unusual or unsupported format (e.g., .exe)."
+    ],
+    "expected_result": "The page does not crash or display critical errors, and behavior for large/unsupported files may vary (e.g., upload fails, takes long, browser error).",
+    "category": "Edge Case",
+    "page": "/upload"
+  },
+  {
+    "id": "REQ-084",
+    "feature": "JavaScript Alerts",
+    "description": "If the user cancels a confirm dialog or dismisses a prompt dialog without entry, the 'Result:' output should still render without script errors.",
+    "steps": [
+      "Navigate to /javascript_alerts.",
+      "Click 'Click for JS Confirm' and then click 'Cancel' in the dialog.",
+      "Click 'Click for JS Prompt' and then click 'Cancel' in the dialog.",
+      "Observe the 'Result:' area and browser console."
+    ],
+    "expected_result": "The 'Result:' area updates (e.g., 'You clicked: Cancel'), and no JavaScript errors occur.",
+    "category": "Negative",
+    "page": "/javascript_alerts"
+  },
+  {
+    "id": "REQ-085",
+    "feature": "JavaScript Alerts",
+    "description": "Multiple rapid clicks on alert buttons should result in repeated dialogs without breaking the page.",
+    "steps": [
+      "Navigate to /javascript_alerts.",
+      "Rapidly click 'Click for JS Alert' multiple times.",
+      "Observe dialog behavior and browser console."
+    ],
+    "expected_result": "Multiple alert dialogs appear sequentially, and the page does not break or display JavaScript errors.",
+    "category": "Edge Case",
+    "page": "/javascript_alerts"
+  },
+  {
+    "id": "REQ-086",
+    "feature": "Context Menu",
+    "description": "Right-clicking outside the specified box area shall present only the default browser context menu, not the custom 'the-internet' item.",
+    "steps": [
+      "Navigate to /context_menu.",
+      "Right-click on an area of the page outside the custom context menu box."
+    ],
+    "expected_result": "Only the default browser context menu is displayed, and the 'the-internet' custom item is not present.",
+    "category": "Edge Case",
+    "page": "/context_menu"
+  },
+  {
+    "id": "REQ-087",
+    "feature": "Context Menu",
+    "description": "If the user ignores the alert triggered by context menu selection, the rest of the page should remain functional after the alert is dismissed.",
+    "steps": [
+      "Navigate to /context_menu.",
+      "Right-click the box and select 'the-internet' to trigger the alert.",
+      "Dismiss the alert.",
+      "Attempt to interact with other elements on the page (if any)."
+    ],
+    "expected_result": "The page remains functional after the alert is dismissed.",
+    "category": "Negative",
+    "page": "/context_menu"
+  },
+  {
+    "id": "REQ-088",
+    "feature": "Hovers",
+    "description": "Hover events on mobile/touch environments may not behave as on desktop, potentially requiring a tap to reveal details, and the primary test focus is desktop browsers.",
+    "steps": [
+      "(On a touch device) Navigate to /hovers.",
+      "Tap on an image.",
+      "Observe if hidden details are revealed."
+    ],
+    "expected_result": "Tapping on an image reveals the hidden details (if implemented for touch).",
+    "category": "Edge Case",
+    "page": "/hovers"
+  },
+  {
+    "id": "REQ-089",
+    "feature": "Horizontal Slider",
+    "description": "Both keyboard and mouse interactions shall be supported for the slider, and repeated movement beyond the minimum or maximum extremes should clamp the value at those limits.",
+    "steps": [
+      "Navigate to /horizontal_slider.",
+      "Move the slider to its minimum value using the mouse.",
+      "Attempt to move it further left with the keyboard left arrow.",
+      "Move the slider to its maximum value using the mouse.",
+      "Attempt to move it further right with the keyboard right arrow."
+    ],
+    "expected_result": "The slider value does not go below the minimum or above the maximum.",
+    "category": "Edge Case",
+    "page": "/horizontal_slider"
+  },
+  {
+    "id": "REQ-090",
+    "feature": "Large & Deep DOM",
+    "description": "Despite potentially slow rendering or heavy scrolling due to the large DOM, the page shall remain responsive and not produce critical JavaScript errors.",
+    "steps": [
+      "Navigate to /large.",
+      "Scroll rapidly up and down the page.",
+      "Observe browser responsiveness and developer console for errors."
+    ],
+    "expected_result": "The page remains responsive during scrolling, and no critical JavaScript errors occur.",
+    "category": "Edge Case",
+    "page": "/large"
+  },
+  {
+    "id": "REQ-091",
+    "feature": "Infinite Scroll",
+    "description": "Scrolling beyond the available dynamically loaded content shall gracefully stop adding new sections without error.",
+    "steps": [
+      "Navigate to /infinite_scroll.",
+      "Scroll to the very bottom of the page, ensuring all content is loaded.",
+      "Continue attempting to scroll further.",
+      "Observe for new content and errors."
+    ],
+    "expected_result": "New sections stop being added, and no errors are displayed.",
+    "category": "Negative",
+    "page": "/infinite_scroll"
+  },
+  {
+    "id": "REQ-092",
+    "feature": "Floating Menu",
+    "description": "Very fast scrolling shall not detach the floating menu from its expected position or cause flickering.",
+    "steps": [
+      "Navigate to /floating_menu.",
+      "Scroll very rapidly up and down the page.",
+      "Observe the floating menu's position and stability."
+    ],
+    "expected_result": "The floating menu remains in its expected position relative to the viewport, and no flickering or visual glitches occur.",
+    "category": "Edge Case",
+    "page": "/floating_menu"
+  },
+  {
+    "id": "REQ-093",
+    "feature": "Shifting Content",
+    "description": "Pixel-level shifts of elements on each page load can cause automation based on absolute positions to fail, highlighting the need for robust locators.",
+    "steps": [
+      "Navigate to /shifting_content.",
+      "Observe element positions.",
+      "Reload the page and observe positions again."
+    ],
+    "expected_result": "Element positions shift slightly on each load.",
+    "category": "Edge Case",
+    "page": "/shifting_content"
+  },
+  {
+    "id": "REQ-094",
+    "feature": "Geolocation",
+    "description": "If the user denies location permission, the page shall handle this gracefully (e.g., by displaying 'no coordinates available') without crashing.",
+    "steps": [
+      "Navigate to /geolocation.",
+      "Click 'Where am I?'.",
+      "When prompted by the browser, deny location permission.",
+      "Observe the page content and browser console."
+    ],
+    "expected_result": "The page displays a message indicating location is unavailable (e.g., 'no coordinates available'), and the page does not crash or display errors.",
+    "category": "Negative",
+    "page": "/geolocation"
+  },
+  {
+    "id": "REQ-095",
+    "feature": "Geolocation",
+    "description": "If location services are temporarily unavailable, a message or empty coordinates should appear rather than unhandled errors.",
+    "steps": [
+      "(Simulate location services unavailability, e.g., disable GPS/location in OS settings).",
+      "Navigate to /geolocation.",
+      "Click 'Where am I?'.",
+      "Observe the page content and browser console."
+    ],
+    "expected_result": "A message indicating unavailability or empty coordinates appears, and no unhandled errors are displayed.",
+    "category": "Edge Case",
+    "page": "/geolocation"
+  },
+  {
+    "id": "REQ-096",
+    "feature": "Windows",
+    "description": "If pop-up blockers are enabled, the new window may not open, but the base page should still function without errors.",
+    "steps": [
+      "Enable pop-up blockers in the browser.",
+      "Navigate to /windows.",
+      "Click 'Click Here'.",
+      "Observe if a new window opens and the base page's functionality."
+    ],
+    "expected_result": "The new window may not open, but the base /windows page remains functional and displays no errors.",
+    "category": "Edge Case",
+    "page": "/windows"
+  },
+  {
+    "id": "REQ-097",
+    "feature": "JavaScript Error",
+    "description": "The intentional JavaScript error on load should be verifiable, and the page should remain at least partially accessible for inspection despite the error.",
+    "steps": [
+      "Navigate to /javascript_error.",
+      "Open browser developer tools console.",
+      "Attempt to interact with any visible elements on the page."
+    ],
+    "expected_result": "A JavaScript error is present in the console, and the page content is still visible and at least partially inspectable.",
+    "category": "Edge Case",
+    "page": "/javascript_error"
+  },
+  {
+    "id": "REQ-098",
+    "feature": "Usability - Discoverability",
+    "description": "Page structures shall be simple and minimalistic, making intended test interactions (clicks, key presses, hovers) easily discoverable without prior instruction.",
+    "steps": [
+      "Navigate to any example page (e.g., /checkboxes, /login).",
+      "Observe the layout and controls without prior knowledge."
+    ],
+    "expected_result": "Interactive elements are clearly visible and their purpose is intuitive, and the page layout is uncluttered and easy to understand.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-099",
+    "feature": "Usability - Explanatory Text",
+    "description": "Each example page shall include explanatory text at or near the top that clearly states the behavior being demonstrated.",
+    "steps": [
+      "Navigate to any example page (e.g., /typos, /dynamic_content).",
+      "Locate and read the text at the top of the page."
+    ],
+    "expected_result": "Explanatory text is present at or near the top of the page and clearly describes the page's demonstrated behavior.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-100",
+    "feature": "Usability - Control Labeling",
+    "description": "Important interactive controls (e.g., 'Login', 'Add Element', 'Where am I?', 'Click for JS Alert') shall be visually distinguishable as buttons or links and labeled with descriptive text reflecting their actions.",
+    "steps": [
+      "Navigate to pages with interactive controls (e.g., /login, /add_remove_elements/, /geolocation, /javascript_alerts).",
+      "Observe the appearance and labels of interactive elements."
+    ],
+    "expected_result": "Interactive controls are clearly identifiable as buttons or links, and their labels accurately describe their actions.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-101",
+    "feature": "Usability - Simple Visuals",
+    "description": "The visual appearance of the site shall remain intentionally simple and unobtrusive, allowing users to focus on testing behavior rather than elaborate design details.",
+    "steps": [
+      "Navigate through various pages of the site.",
+      "Observe the overall design and styling."
+    ],
+    "expected_result": "The site has a simple, minimalistic, and unobtrusive design with no elaborate or distracting design elements.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-102",
+    "feature": "Usability - Consistency",
+    "description": "The site shall provide a consistent and intuitive feel across examples, enabling users to understand new examples quickly based on prior experience.",
+    "steps": [
+      "Navigate between different example pages.",
+      "Observe common UI patterns and navigation."
+    ],
+    "expected_result": "A consistent layout and interaction pattern is maintained across different example pages, making new examples quick to understand.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-103",
+    "feature": "Performance - Page Load Time",
+    "description": "Under normal network conditions, each example page shall render basic static content within a reasonable time frame suitable for interactive testing.",
+    "steps": [
+      "Navigate to various example pages (e.g., /checkboxes, /login).",
+      "Measure the time taken for the basic static content to render (e.g., using browser dev tools)."
+    ],
+    "expected_result": "Basic static content on pages renders within a reasonable time (e.g., < 2-3 seconds).",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-104",
+    "feature": "Performance - Slow Resources",
+    "description": "For 'Slow Resources' features, the main page shell shall load in a way that allows testers to perceive and experiment with the intentional delay of certain elements.",
+    "steps": [
+      "Navigate to /slow_resources.",
+      "Observe the page loading process and the appearance of delayed elements."
+    ],
+    "expected_result": "The main page shell loads relatively quickly, and the delay in loading specific 'slow resources' is observable.",
+    "category": "Functional",
+    "page": "/slow_resources"
+  },
+  {
+    "id": "REQ-105",
+    "feature": "Performance - Dynamic Content Refresh",
+    "description": "Dynamic behaviors relying on page refresh (e.g., Dynamic Content, Typos, Disappearing Elements) shall complete new content rendering immediately after the browser completes the reload event.",
+    "steps": [
+      "Navigate to /dynamic_content (or /typos, /disappearing_elements).",
+      "Refresh the page.",
+      "Observe the time taken for new content to render after the browser's reload indicator finishes."
+    ],
+    "expected_result": "New content renders immediately after the browser completes the reload event.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-106",
+    "feature": "Reliability - Page Accessibility",
+    "description": "All example pages listed on the home page shall be accessible via their respective links without resulting in HTTP errors (e.g., 404), unless purposely demonstrating error conditions.",
+    "steps": [
+      "Navigate to /.",
+      "Click each link in the 'Available Examples' section.",
+      "Verify each page loads successfully (HTTP 200 OK), except for /status_codes which should load its content as expected."
+    ],
+    "expected_result": "Each linked page loads successfully (HTTP 200 OK), and no HTTP 404 or other client/server errors occur, except for pages intentionally demonstrating error codes.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-107",
+    "feature": "Reliability - Randomized Behavior Stability",
+    "description": "Randomized behaviors (e.g., Typos, Dynamic Content, Notification Messages) shall not cause JavaScript errors that prevent the page from rendering correctly.",
+    "steps": [
+      "Navigate to /typos (or /dynamic_content, /notification_message_rendered).",
+      "Refresh the page multiple times.",
+      "Interact with dynamic elements (e.g., click 'load new message').",
+      "Monitor the browser console for JavaScript errors."
+    ],
+    "expected_result": "No JavaScript errors are reported in the console, and the page renders correctly despite randomized content.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-108",
+    "feature": "Reliability - System Stability",
+    "description": "The site shall tolerate repeated navigation, refresh, and interaction cycles without requiring a restart or leading to inconsistent, unrecoverable states.",
+    "steps": [
+      "Navigate between several example pages repeatedly.",
+      "Refresh pages multiple times.",
+      "Perform interactions (clicks, inputs) repeatedly on various pages.",
+      "Observe for unexpected behavior, crashes, or unrecoverable states."
+    ],
+    "expected_result": "The site remains stable and functional throughout repeated actions, with no crashes, freezes, or unrecoverable states.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-109",
+    "feature": "Compatibility - Modern Browsers",
+    "description": "The site shall operate correctly on common modern desktop browsers that support JavaScript, HTML5 forms, and the Geolocation API.",
+    "steps": [
+      "Test the site on different modern desktop browsers (e.g., Chrome, Firefox, Edge).",
+      "Verify core functionalities (e.g., forms, geolocation) work as expected on each browser."
+    ],
+    "expected_result": "All features function correctly across specified modern browsers.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-110",
+    "feature": "Compatibility - Native Dialogs",
+    "description": "Context-menu, alert, confirm, and prompt examples shall behave consistently with browser-native UI patterns for those dialogs, without requiring additional plugins.",
+    "steps": [
+      "Navigate to /javascript_alerts and /context_menu.",
+      "Trigger alerts, confirms, prompts, and the custom context menu.",
+      "Observe the appearance and behavior of the dialogs."
+    ],
+    "expected_result": "Dialogs appear and behave as native browser dialogs, and no additional plugins are required for dialog functionality.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-111",
+    "feature": "Compatibility - Multiple Windows",
+    "description": "Multiple windows and tab behaviors (e.g., /windows, /multiple_windows) shall function correctly in standard desktop browsers, opening new windows or tabs as configured by browser settings.",
+    "steps": [
+      "Navigate to /windows (and /multiple_windows if distinct).",
+      "Click links designed to open new windows/tabs.",
+      "Verify new windows/tabs open according to browser settings."
+    ],
+    "expected_result": "New windows or tabs open as expected, and the functionality works correctly across standard desktop browsers.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-112",
+    "feature": "Modularity - Independence",
+    "description": "Each example page shall be logically independent, ensuring that changes to one example do not affect the functionality of others.",
+    "steps": [
+      "Navigate to /login and successfully log in.",
+      "Navigate to /checkboxes and interact with checkboxes.",
+      "Navigate back to /login and verify login state is as expected (e.g., still logged in or session managed independently).",
+      "Navigate to /checkboxes again and verify its state is independent of login."
+    ],
+    "expected_result": "The state and functionality of one example page are not affected by interactions on another example page.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-113",
+    "feature": "Modularity - Direct URL Access",
+    "description": "Example pages shall be addressable directly by URL, allowing them to be used independently as test fixtures or training assets.",
+    "steps": [
+      "Directly navigate to various example page URLs (e.g., type '/checkboxes' into the browser address bar).",
+      "Verify the page loads correctly without requiring prior navigation from the home page."
+    ],
+    "expected_result": "Each example page loads correctly when accessed directly by its URL, without requiring prior navigation from the home page.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-114",
+    "feature": "UX - Clean Aesthetic",
+    "description": "The overall aesthetic of the application should feel clean and uncluttered, with ample whitespace and minimal distractions, allowing users to concentrate on the functional behavior under test.",
+    "steps": [
+      "Visually inspect various pages of the application.",
+      "Assess the layout, spacing, and presence of distracting elements."
+    ],
+    "expected_result": "Pages appear clean and uncluttered, with ample whitespace and minimal visual distractions, facilitating focus on testing.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-115",
+    "feature": "UX - Consistent Typography/Spacing",
+    "description": "The typography and spacing across pages should provide a sense of consistency and calmness, avoiding abrupt changes in font size or layout that might confuse or distract users during testing activities.",
+    "steps": [
+      "Visually inspect typography (font size, family) and spacing across different pages.",
+      "Look for abrupt changes or inconsistencies."
+    ],
+    "expected_result": "Typography and spacing are consistent across pages, contributing to a calm visual experience without abrupt changes in font size or layout.",
+    "category": "Functional",
+    "page": "/"
+  },
+  {
+    "id": "REQ-116",
+    "feature": "UX - Subtle Color Usage",
+    "description": "Color usage should remain subtle and neutral, conveying a professional demo environment, while still making controls and headings easy to visually scan.",
+    "steps": [
+      "Visually inspect the color palette used across the site.",
+      "Assess the visibility of controls and headings."
+    ],
+    "expected_result": "Colors are subtle and neutral, conveying a professional demo environment, and controls and headings are still easily scannable.",
+    "category": "Functional",
+    "page": "/"
+  }
+]

@@ -4,14 +4,26 @@ Output only valid Python code. No markdown fences. No explanation.
 
 Rules:
 1. Import pytest and playwright.sync_api at the top.
-2. Add a BASE_URL constant.
+2. Add a BASE_URL constant set to the page URL from the DOM snapshot below.
 3. One test function per requirement, named test_<id>_<feature>.
 4. Every test must have a docstring with the requirement ID and description.
-5. Use get_by_role, get_by_label, or get_by_text for locators.
+5. CRITICAL — Use ONLY real locators extracted from the DOM SNAPSHOT below. Match elements
+   using get_by_role, get_by_label, get_by_placeholder, get_by_text, or locator('[id=...]')
+   based on the actual id, name, aria-label, placeholder, role, or visible text values
+   listed in the DOM snapshot. Do NOT invent or guess locators that are not in the snapshot.
 6. Use expect() assertions, never time.sleep().
 7. Cover edge cases and negative scenarios where category is "Negative" or "Edge Case".
+8. When a requirement targets a specific page (see the "page" field), navigate to that
+   page URL before interacting with its locators.
 
 {critique}
+
+{locked_locators}
+
+{previous_code}
+
+DOM SNAPSHOT (real page elements — use these for all locators):
+{dom_snapshot}
 
 REQUIREMENTS:
 {requirements}

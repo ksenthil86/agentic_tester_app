@@ -1,0 +1,1611 @@
+{
+  "pages": [
+    {
+      "url": "https://the-internet.herokuapp.com/",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "A/B Testing",
+          "href": "/abtest"
+        },
+        {
+          "tag": "a",
+          "text": "Add/Remove Elements",
+          "href": "/add_remove_elements/"
+        },
+        {
+          "tag": "a",
+          "text": "Basic Auth",
+          "href": "/basic_auth"
+        },
+        {
+          "tag": "a",
+          "text": "Broken Images",
+          "href": "/broken_images"
+        },
+        {
+          "tag": "a",
+          "text": "Challenging DOM",
+          "href": "/challenging_dom"
+        },
+        {
+          "tag": "a",
+          "text": "Checkboxes",
+          "href": "/checkboxes"
+        },
+        {
+          "tag": "a",
+          "text": "Context Menu",
+          "href": "/context_menu"
+        },
+        {
+          "tag": "a",
+          "text": "Digest Authentication",
+          "href": "/digest_auth"
+        },
+        {
+          "tag": "a",
+          "text": "Disappearing Elements",
+          "href": "/disappearing_elements"
+        },
+        {
+          "tag": "a",
+          "text": "Drag and Drop",
+          "href": "/drag_and_drop"
+        },
+        {
+          "tag": "a",
+          "text": "Dropdown",
+          "href": "/dropdown"
+        },
+        {
+          "tag": "a",
+          "text": "Dynamic Content",
+          "href": "/dynamic_content"
+        },
+        {
+          "tag": "a",
+          "text": "Dynamic Controls",
+          "href": "/dynamic_controls"
+        },
+        {
+          "tag": "a",
+          "text": "Dynamic Loading",
+          "href": "/dynamic_loading"
+        },
+        {
+          "tag": "a",
+          "text": "Entry Ad",
+          "href": "/entry_ad"
+        },
+        {
+          "tag": "a",
+          "text": "Exit Intent",
+          "href": "/exit_intent"
+        },
+        {
+          "tag": "a",
+          "text": "File Download",
+          "href": "/download"
+        },
+        {
+          "tag": "a",
+          "text": "File Upload",
+          "href": "/upload"
+        },
+        {
+          "tag": "a",
+          "text": "Floating Menu",
+          "href": "/floating_menu"
+        },
+        {
+          "tag": "a",
+          "text": "Forgot Password",
+          "href": "/forgot_password"
+        },
+        {
+          "tag": "a",
+          "text": "Form Authentication",
+          "href": "/login"
+        },
+        {
+          "tag": "a",
+          "text": "Frames",
+          "href": "/frames"
+        },
+        {
+          "tag": "a",
+          "text": "Geolocation",
+          "href": "/geolocation"
+        },
+        {
+          "tag": "a",
+          "text": "Horizontal Slider",
+          "href": "/horizontal_slider"
+        },
+        {
+          "tag": "a",
+          "text": "Hovers",
+          "href": "/hovers"
+        },
+        {
+          "tag": "a",
+          "text": "Infinite Scroll",
+          "href": "/infinite_scroll"
+        },
+        {
+          "tag": "a",
+          "text": "Inputs",
+          "href": "/inputs"
+        },
+        {
+          "tag": "a",
+          "text": "JQuery UI Menus",
+          "href": "/jqueryui/menu"
+        },
+        {
+          "tag": "a",
+          "text": "JavaScript Alerts",
+          "href": "/javascript_alerts"
+        },
+        {
+          "tag": "a",
+          "text": "JavaScript onload event error",
+          "href": "/javascript_error"
+        },
+        {
+          "tag": "a",
+          "text": "Key Presses",
+          "href": "/key_presses"
+        },
+        {
+          "tag": "a",
+          "text": "Large & Deep DOM",
+          "href": "/large"
+        },
+        {
+          "tag": "a",
+          "text": "Multiple Windows",
+          "href": "/windows"
+        },
+        {
+          "tag": "a",
+          "text": "Nested Frames",
+          "href": "/nested_frames"
+        },
+        {
+          "tag": "a",
+          "text": "Notification Messages",
+          "href": "/notification_message"
+        },
+        {
+          "tag": "a",
+          "text": "Redirect Link",
+          "href": "/redirector"
+        },
+        {
+          "tag": "a",
+          "text": "Secure File Download",
+          "href": "/download_secure"
+        },
+        {
+          "tag": "a",
+          "text": "Shadow DOM",
+          "href": "/shadowdom"
+        },
+        {
+          "tag": "a",
+          "text": "Shifting Content",
+          "href": "/shifting_content"
+        },
+        {
+          "tag": "a",
+          "text": "Slow Resources",
+          "href": "/slow"
+        },
+        {
+          "tag": "a",
+          "text": "Sortable Data Tables",
+          "href": "/tables"
+        },
+        {
+          "tag": "a",
+          "text": "Status Codes",
+          "href": "/status_codes"
+        },
+        {
+          "tag": "a",
+          "text": "Typos",
+          "href": "/typos"
+        },
+        {
+          "tag": "a",
+          "text": "WYSIWYG Editor",
+          "href": "/tinymce"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h1",
+          "text": "Welcome to the-internet",
+          "class": [
+            "heading"
+          ]
+        },
+        {
+          "tag": "h2",
+          "text": "Available Examples"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/abtest",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "No A/B Test"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/add_remove_elements/",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "button",
+          "text": "Add Element"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Add/Remove Elements"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/broken_images",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Broken Images"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/challenging_dom",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "bar",
+          "id": "1be72090-152d-013f-445c-2673110fe6a4",
+          "class": [
+            "button"
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "bar",
+          "id": "1be750e0-152d-013f-445d-2673110fe6a4",
+          "class": [
+            "button",
+            "alert"
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "baz",
+          "id": "1be78110-152d-013f-445e-2673110fe6a4",
+          "class": [
+            "button",
+            "success"
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Challenging DOM"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/checkboxes",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Checkboxes"
+        },
+        {
+          "tag": "form",
+          "id": "checkboxes"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/context_menu",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Context Menu"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/disappearing_elements",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "tag": "a",
+          "text": "About",
+          "href": "/about/"
+        },
+        {
+          "tag": "a",
+          "text": "Contact Us",
+          "href": "/contact-us/"
+        },
+        {
+          "tag": "a",
+          "text": "Portfolio",
+          "href": "/portfolio/"
+        },
+        {
+          "tag": "a",
+          "text": "Gallery",
+          "href": "/gallery/"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Disappearing Elements"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/drag_and_drop",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Drag and Drop"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/dropdown",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "select",
+          "id": "dropdown",
+          "options": [
+            "Please select an option",
+            "Option 1",
+            "Option 2"
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Dropdown List"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/download",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "some-file.txt",
+          "href": "download/some-file.txt"
+        },
+        {
+          "tag": "a",
+          "text": "testfile.txt",
+          "href": "download/testfile.txt"
+        },
+        {
+          "tag": "a",
+          "text": "random_data.txt",
+          "href": "download/random_data.txt"
+        },
+        {
+          "tag": "a",
+          "text": "Demo1.txt",
+          "href": "download/Demo1.txt"
+        },
+        {
+          "tag": "a",
+          "text": "Certificate.pdf",
+          "href": "download/Certificate.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "DEMO1.txt",
+          "href": "download/DEMO1.txt"
+        },
+        {
+          "tag": "a",
+          "text": "Shubham_CV.pdf",
+          "href": "download/Shubham_CV.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "README.md",
+          "href": "download/README.md"
+        },
+        {
+          "tag": "a",
+          "text": "tmp7pddx_5y.txt",
+          "href": "download/tmp7pddx_5y.txt"
+        },
+        {
+          "tag": "a",
+          "text": "sample-zip-file.zip",
+          "href": "download/sample-zip-file.zip"
+        },
+        {
+          "tag": "a",
+          "text": "tmp8pre78hw.txt",
+          "href": "download/tmp8pre78hw.txt"
+        },
+        {
+          "tag": "a",
+          "text": "requirements.txt",
+          "href": "download/requirements.txt"
+        },
+        {
+          "tag": "a",
+          "text": "reddem.txt",
+          "href": "download/reddem.txt"
+        },
+        {
+          "tag": "a",
+          "text": "bb.txt",
+          "href": "download/bb.txt"
+        },
+        {
+          "tag": "a",
+          "text": "Gapstars.png",
+          "href": "download/Gapstars.png"
+        },
+        {
+          "tag": "a",
+          "text": "Jpeg_with_exif.jpeg",
+          "href": "download/Jpeg_with_exif.jpeg"
+        },
+        {
+          "tag": "a",
+          "text": "tmpsslruea7.txt",
+          "href": "download/tmpsslruea7.txt"
+        },
+        {
+          "tag": "a",
+          "text": "sample.pdf",
+          "href": "download/sample.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "Updated_Resume.pdf",
+          "href": "download/Updated_Resume.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "Form26QB_AM21377930.pdf",
+          "href": "download/Form26QB_AM21377930.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "Demo1.txt.txt",
+          "href": "download/Demo1.txt.txt"
+        },
+        {
+          "tag": "a",
+          "text": "sample-1mb-test-file.dat",
+          "href": "download/sample-1mb-test-file.dat"
+        },
+        {
+          "tag": "a",
+          "text": "tmpf1krt4js.txt",
+          "href": "download/tmpf1krt4js.txt"
+        },
+        {
+          "tag": "a",
+          "text": "Sample.pdf",
+          "href": "download/Sample.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "skit.pdf",
+          "href": "download/skit.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "LambdaTest.txt",
+          "href": "download/LambdaTest.txt"
+        },
+        {
+          "tag": "a",
+          "text": "chromedriver.exe",
+          "href": "download/chromedriver.exe"
+        },
+        {
+          "tag": "a",
+          "text": "Demo.txt",
+          "href": "download/Demo.txt"
+        },
+        {
+          "tag": "a",
+          "text": "GraphQL_API_Complete_Notes.pdf",
+          "href": "download/GraphQL_API_Complete_Notes.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "zero_bytes_file.txt",
+          "href": "download/zero_bytes_file.txt"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "File Downloader"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/dynamic_content",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "click here",
+          "href": "/dynamic_content?with_content=static"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Dynamic Content"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/dynamic_controls",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "type": "text"
+        },
+        {
+          "tag": "button",
+          "text": "Remove",
+          "type": "button"
+        },
+        {
+          "tag": "button",
+          "text": "Enable",
+          "type": "button"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h4",
+          "text": "Dynamic Controls"
+        },
+        {
+          "tag": "h4",
+          "text": "Remove/add",
+          "class": [
+            "subheader"
+          ]
+        },
+        {
+          "tag": "h4",
+          "text": "Enable/disable",
+          "class": [
+            "subheader"
+          ]
+        },
+        {
+          "tag": "form",
+          "id": "checkbox-example"
+        },
+        {
+          "tag": "form",
+          "id": "input-example"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/dynamic_loading",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Example 1: Element on page that is hidden",
+          "href": "/dynamic_loading/1"
+        },
+        {
+          "tag": "a",
+          "text": "Example 2: Element rendered after the fact",
+          "href": "/dynamic_loading/2"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Dynamically Loaded Page Elements"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/entry_ad",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "click here",
+          "id": "restart-ad"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Entry Ad"
+        },
+        {
+          "tag": "h3",
+          "text": "This is a modal window"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/exit_intent",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Exit Intent"
+        },
+        {
+          "tag": "h3",
+          "text": "This is a modal window"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/floating_menu",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Home",
+          "href": "#home"
+        },
+        {
+          "tag": "a",
+          "text": "News",
+          "href": "#news"
+        },
+        {
+          "tag": "a",
+          "text": "Contact",
+          "href": "#contact"
+        },
+        {
+          "tag": "a",
+          "text": "About",
+          "href": "#about"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Floating Menu"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/forgot_password",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "input",
+          "id": "email",
+          "name": "email",
+          "type": "text"
+        },
+        {
+          "tag": "button",
+          "text": "Retrieve password",
+          "id": "form_submit",
+          "type": "submit",
+          "class": [
+            "radius"
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "label",
+          "text": "E-mail",
+          "for": "email"
+        },
+        {
+          "tag": "h2",
+          "text": "Forgot Password"
+        },
+        {
+          "tag": "form",
+          "id": "forgot_password",
+          "name": "forgot_password",
+          "action": "/forgot_password",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/frames",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Nested Frames",
+          "href": "/nested_frames"
+        },
+        {
+          "tag": "a",
+          "text": "iFrame",
+          "href": "/iframe"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Frames"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/geolocation",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "button",
+          "text": "Where am I?"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Geolocation"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/hovers",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "View profile",
+          "href": "/users/1"
+        },
+        {
+          "tag": "a",
+          "text": "View profile",
+          "href": "/users/2"
+        },
+        {
+          "tag": "a",
+          "text": "View profile",
+          "href": "/users/3"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Hovers"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/iframe",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "textarea"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "An iFrame containing the TinyMCE WYSIWYG Editor"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/infinite_scroll",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "next page",
+          "href": "/infinite_scroll/1"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Infinite Scroll"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/inputs",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "input",
+          "type": "number"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Inputs"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/javascript_alerts",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "button",
+          "text": "Click for JS Alert"
+        },
+        {
+          "tag": "button",
+          "text": "Click for JS Confirm"
+        },
+        {
+          "tag": "button",
+          "text": "Click for JS Prompt"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "JavaScript Alerts"
+        },
+        {
+          "tag": "h4",
+          "text": "Result:"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/javascript_error",
+      "title": "Page with JavaScript errors on load",
+      "elements": []
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/jqueryui/menu",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "JQuery UI Menus",
+          "href": "http://api.jqueryui.com/menu/"
+        },
+        {
+          "tag": "a",
+          "text": "Disabled",
+          "href": "#"
+        },
+        {
+          "tag": "a",
+          "text": "Should not see this",
+          "href": "#"
+        },
+        {
+          "tag": "a",
+          "text": "Enabled",
+          "href": "#"
+        },
+        {
+          "tag": "a",
+          "text": "Downloads",
+          "href": "#"
+        },
+        {
+          "tag": "a",
+          "text": "PDF",
+          "href": "/download/jqueryui/menu/menu.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "CSV",
+          "href": "/download/jqueryui/menu/menu.csv"
+        },
+        {
+          "tag": "a",
+          "text": "Excel",
+          "href": "/download/jqueryui/menu/menu.xls"
+        },
+        {
+          "tag": "a",
+          "text": "Back to JQuery UI",
+          "href": "/jqueryui"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "JQueryUI - Menu"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/large",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Large & Deep DOM"
+        },
+        {
+          "tag": "h4",
+          "text": "No Siblings"
+        },
+        {
+          "tag": "h4",
+          "text": "Siblings"
+        },
+        {
+          "tag": "h4",
+          "text": "Table"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/login",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "input",
+          "id": "username",
+          "name": "username",
+          "type": "text"
+        },
+        {
+          "tag": "input",
+          "id": "password",
+          "name": "password",
+          "type": "password"
+        },
+        {
+          "tag": "button",
+          "text": "Login",
+          "type": "submit",
+          "class": [
+            "radius"
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "label",
+          "text": "Username",
+          "for": "username"
+        },
+        {
+          "tag": "label",
+          "text": "Password",
+          "for": "password"
+        },
+        {
+          "tag": "h2",
+          "text": "Login Page"
+        },
+        {
+          "tag": "h4",
+          "text": "This is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassw",
+          "class": [
+            "subheader"
+          ]
+        },
+        {
+          "tag": "form",
+          "id": "login",
+          "name": "login",
+          "action": "/authenticate",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/nested_frames",
+      "title": "",
+      "elements": []
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/notification_message_rendered",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Click here",
+          "href": "/notification_message"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Notification Message"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/secure",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "input",
+          "id": "username",
+          "name": "username",
+          "type": "text"
+        },
+        {
+          "tag": "input",
+          "id": "password",
+          "name": "password",
+          "type": "password"
+        },
+        {
+          "tag": "button",
+          "text": "Login",
+          "type": "submit",
+          "class": [
+            "radius"
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "\u00d7",
+          "href": "#",
+          "class": [
+            "close"
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "label",
+          "text": "Username",
+          "for": "username"
+        },
+        {
+          "tag": "label",
+          "text": "Password",
+          "for": "password"
+        },
+        {
+          "tag": "h2",
+          "text": "Login Page"
+        },
+        {
+          "tag": "h4",
+          "text": "This is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassw",
+          "class": [
+            "subheader"
+          ]
+        },
+        {
+          "tag": "form",
+          "id": "login",
+          "name": "login",
+          "action": "/authenticate",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/shadowdom",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h1",
+          "text": "Simple template"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/shifting_content",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Example 1: Menu Element",
+          "href": "/shifting_content/menu"
+        },
+        {
+          "tag": "a",
+          "text": "Example 2: An image",
+          "href": "/shifting_content/image"
+        },
+        {
+          "tag": "a",
+          "text": "Example 3: List",
+          "href": "/shifting_content/list"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Shifting Content"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/status_codes",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "here",
+          "href": "http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml"
+        },
+        {
+          "tag": "a",
+          "text": "200",
+          "href": "status_codes/200"
+        },
+        {
+          "tag": "a",
+          "text": "301",
+          "href": "status_codes/301"
+        },
+        {
+          "tag": "a",
+          "text": "404",
+          "href": "status_codes/404"
+        },
+        {
+          "tag": "a",
+          "text": "500",
+          "href": "status_codes/500"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Status Codes"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/tables",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "edit",
+          "href": "#edit"
+        },
+        {
+          "tag": "a",
+          "text": "delete",
+          "href": "#delete"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Tables"
+        },
+        {
+          "tag": "h4",
+          "text": "Example 1"
+        },
+        {
+          "tag": "h4",
+          "text": "Example 2"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/typos",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Typos"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/upload",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "input",
+          "id": "file-upload",
+          "name": "file",
+          "type": "file"
+        },
+        {
+          "tag": "input",
+          "id": "file-submit",
+          "type": "submit",
+          "value": "Upload",
+          "class": [
+            "button"
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "File Uploader"
+        },
+        {
+          "tag": "form",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "url": "https://the-internet.herokuapp.com/windows",
+      "title": "The Internet",
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Click Here",
+          "href": "/windows/new"
+        },
+        {
+          "tag": "a",
+          "text": "Elemental Selenium",
+          "href": "http://elementalselenium.com/"
+        },
+        {
+          "tag": "h3",
+          "text": "Opening a new window"
+        }
+      ]
+    }
+  ],
+  "errors": [
+    "https://the-internet.herokuapp.com/basic_auth: 401 Client Error: Unauthorized for url: https://the-internet.herokuapp.com/basic_auth",
+    "https://the-internet.herokuapp.com/digest_auth: 401 Client Error: Unauthorized for url: https://the-internet.herokuapp.com/digest_auth",
+    "https://the-internet.herokuapp.com/multiple_windows: 404 Client Error: Not Found for url: https://the-internet.herokuapp.com/multiple_windows",
+    "https://the-internet.herokuapp.com/secure_file_download: 404 Client Error: Not Found for url: https://the-internet.herokuapp.com/secure_file_download",
+    "https://the-internet.herokuapp.com/slow_resources: 404 Client Error: Not Found for url: https://the-internet.herokuapp.com/slow_resources"
+  ]
+}
